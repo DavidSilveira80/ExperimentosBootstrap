@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastrar Bicicleta</title>
+  <style>
+    form {
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <form method="POST">
+    <h1>Cadastrar Bicicleta</h1>
+    <label for="modelo">Modelo:</label>
+    <input type="text" name="modelo" id="modelo" required style="width: 100%; max-width: 400px;">
+    <label for="valor">Valor:</label>
+    <input type="text" name="valor" id="valor" required style="width: 100%; max-width: 200px;">
+    <label for="comprador">Nome do comprador:</label>
+    <input type="text" name="comprador" id="comprador" required style="width: 100%; max-width: 400px;">
+    <label for="data">Data da compra:</label>
+    <input type="text" name="data" id="data" placeholder="DD/MM/AAAA" required style="width: 100%; max-width: 200px;">
+    <label for="loja">Nome da loja:</label>
+    <input type="text" name="loja" id="loja" required style="width: 100%; max-width: 400px;">
+    <input type="submit" value="Cadastrar">
+  </form>
+</body>
+</html>
